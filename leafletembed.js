@@ -22,7 +22,7 @@ function initmap() {
 function loadMarkers() {
 	loadMarkersForAFF();
 	loadMarkersForC();
-//	loadMarkersForK();
+	loadMarkersForK();
 	loadMarkersForKD();
 	loadMarkersForL();
 	loadMarkersForMP();
@@ -174,6 +174,58 @@ function loadMarkersForC() {
 			);
 	});
 }
+
+function loadMarkersForK() {
+	var kIcon = L.icon({
+		iconUrl: 'gfx/logo_k.png',
+
+		iconSize:     [25, 29],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataK = [
+		{
+			"name":"Bengt Johansson",
+			"age": "61",
+			"free":"Grafiker",
+			"position":[57.1200,12.2173]
+		},
+		{
+			"name":"Ulla Ohlsson",
+			"age": "67",
+			"free":"Sjuksköterska",
+			"position":[57.1084,12.2507]
+		},
+		{
+			"name":"Ingemar Ericsson",
+			"age": "59",
+			"free":"Stödassistent",
+			"position":[57.0988,12.2509]
+		},
+		{
+			"name":"Jenneli Pedersen",
+			"age": "38",
+			"free":"Beteendevetare",
+			"position":[57.1180,12.2732]
+		},
+		{
+			"name":"Tomas Dahl",
+			"age": "61",
+			"free":"Chaufför",
+			"position":[57.0882,12.2721]
+		}
+	];
+
+	dataK.forEach(function(entry) {
+		L.marker(entry.position, {icon: kIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free
+			);
+	});
+}
+
 
 function loadMarkersForKD() {
 	var kdIcon = L.icon({
