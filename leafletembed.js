@@ -26,7 +26,7 @@ function loadMarkers() {
 	loadMarkersForKD();
 	loadMarkersForL();
 	loadMarkersForMP();
-//	loadMarkersForM();
+	loadMarkersForM();
 //	loadMarkersForS();
 	loadMarkersForSD();
 	loadMarkersForSPI();
@@ -417,6 +417,146 @@ function loadMarkersForMP() {
 
 	dataMP.forEach(function(entry) {
 		L.marker(entry.position, {icon: mpIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
+}
+
+function loadMarkersForM() {
+	var mIcon = L.icon({
+		iconUrl: 'gfx/logo_m.png',
+
+		iconSize:     [25, 17],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataM = [
+		{
+			"name":"Ann-Charlotte Stenkil",
+			"age":"64",
+			"free":"Civilekonom",
+			"place":"Varberg",
+			"position":[57.11061,12.25576]
+		},
+		{
+			"name":"Peter Sjöholm",
+			"age":"61",
+			"free":"Företagare",
+			"place":"Rolfstorp",
+			"position":[57.1459,12.4591]
+		},
+		{
+			"name":"Hanna Netterberg",
+			"age":"35",
+			"free":"Planeringscontroller",
+			"place":"Derome",
+			"position":[57.2134,12.3082]
+		},
+		{
+			"name":"Erland Linjer",
+			"age":"70",
+			"free":"Med. dr.",
+			"place":"Varberg",
+			"position":[57.1111,12.2568]
+		},
+		{
+			"name":"Micael Åkesson",
+			"age":"53",
+			"free":"Försäkringstjänsteman",
+			"place":"Stråvalla",
+			"position":[57.2985,12.2178]
+		},
+		{
+			"name":"Anette Lofjärd",
+			"age":"55",
+			"free":"Ekonom",
+			"place":"Getterön",
+			"position":[57.1207,12.2200]
+		},
+		{
+			"name":"Reine Antonér",
+			"age":"62",
+			"free":"Egenföretagare",
+			"place":"Trönninge",
+			"position":[57.1420,12.2867]
+		},
+		{
+			"name":"Anne Tano",
+			"age":"54",
+			"free":"Verksamhetschef",
+			"place":"Varberg",
+			"position":[57.0941,12.2521]
+		},
+		{
+			"name":"Ulrika Ericsson",
+			"age":"52",
+			"free":"Projektledare",
+			"place":"Varberg",
+			"position":[57.1121,12.2576]
+		},
+		{
+			"name":"Sven Andersson",
+			"age":"59",
+			"free":"Fil. mag.",
+			"place":"Varberg",
+			"position":[57.1069,12.2504]
+		},
+		{
+			"name":"Nevrie B. Suleyman",
+			"age":"43",
+			"free":"Civilekonom",
+			"place":"Bläshammar",
+			"position":[57.1554,12.2557]
+		},
+		{
+			"name":"Andreas Björklund",
+			"age":"43",
+			"free":"Civilekonom",
+			"place":"Varberg",
+			"position":[57.0980,12.2579]
+		},
+		{
+			"name":"Gösta Bergenheim",
+			"age":"69",
+			"free":"Fd. kriminalinpektör",
+			"place":"Varberg",
+			"position":[57.1042,12.2549]
+		},
+		{
+			"name":"Hannah Björnerhag",
+			"age":"20",
+			"free":"Studerande",
+			"place":"Varberg",
+			"position":[57.1125,12.2965]
+		},
+		{
+			"name":"David Sandrén",
+			"age":"36",
+			"free":"HR-specialist",
+			"place":"Varberg",
+			"position":[57.0985,12.2893]
+		},
+		{
+			"name":"Annsofi Aurell",
+			"age":"72",
+			"free":"Leg. sjukgymnast",
+			"place":"Varberg",
+			"position":[57.10482,12.25243]
+		},
+		{
+			"name":"Madelene Thomsen",
+			"age":"47",
+			"free":"Socialpedagog",
+			"place":"Träslövsläge",
+			"position":[57.0543,12.2836]
+		}
+	];
+
+	dataM.forEach(function(entry) {
+		L.marker(entry.position, {icon: mIcon})
 			.addTo(map)
 			.bindPopup(
 				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
