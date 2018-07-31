@@ -30,7 +30,7 @@ function loadMarkers() {
 //	loadMarkersForS();
 //	loadMarkersForSD();
 //	loadMarkersForSPI();
-//	loadMarkersForV();
+	loadMarkersForV();
 }
 
 function loadMarkersForMP() {
@@ -97,6 +97,62 @@ function loadMarkersForMP() {
 
 	dataMP.forEach(function(entry) {
 		L.marker(entry.position, {icon: mpIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
+}
+
+function loadMarkersForV() {
+	var vIcon = L.icon({
+		iconUrl: 'gfx/logo_v.png',
+
+		iconSize:     [25, 25],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataV = [
+		{
+			"name":"Lars-Åke Erlandsson",
+			"age":"45",
+			"free":"Lärare",
+			"place":"Varberg",
+			"position":[57.1050,12.2984]
+		},
+		{
+			"name":"Kajsa Lissel",
+			"age":"48",
+			"free":"Stödassistent",
+			"place":"Varberg",
+			"position":[57.1082,12.2815]
+		},
+		{
+			"name":"Gerhard Eriksson",
+			"age":"69",
+			"free":"Pensionär",
+			"place":"Varberg",
+			"position":[57.0966,12.2508]
+		},
+		{
+			"name":"Kjell-Erik Karlsson",
+			"age":"72",
+			"free":"Pensionär",
+			"place":"Varberg",
+			"position":[57.0959,12.2486]
+		},
+		{
+			"name":"Ingela Svensson",
+			"age":"63",
+			"free":"Kammaråklagare",
+			"place":"Varberg",
+			"position":[57.1089,12.2554]
+		}
+	];
+
+	dataV.forEach(function(entry) {
+		L.marker(entry.position, {icon: vIcon})
 			.addTo(map)
 			.bindPopup(
 				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
