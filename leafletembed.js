@@ -20,7 +20,7 @@ function initmap() {
 }
 
 function loadMarkers() {
-//	loadMarkersForAFF();
+	loadMarkersForAFF();
 	loadMarkersForC();
 //	loadMarkersForK();
 	loadMarkersForKD();
@@ -31,6 +31,57 @@ function loadMarkers() {
 	loadMarkersForSD();
 	loadMarkersForSPI();
 	loadMarkersForV();
+}
+
+function loadMarkersForAFF() {
+	var affIcon = L.icon({
+		iconUrl: 'gfx/logo_aff.png',
+
+		iconSize:     [25, 20],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataAFF = [
+		{
+			"name":"Andreas Feymark",
+			"age": "34",
+			"free":"Teknologie doktor",
+			"position":[57.1468,12.4554]
+		},
+		{
+			"name":"Johanna Palmelid",
+			"age": "36",
+			"free":"Beteendevetare",
+			"position":[57.1464,12.4541]
+		},
+		{
+			"name":"Hanna Götz",
+			"age": "28",
+			"free":"Undersköterska",
+			"position":[57.1471,12.4565]
+		},
+		{
+			"name":"Annelie Sinander",
+			"age": "24",
+			"free":"Studerande",
+			"position":[57.1162,12.4757]
+		},
+		{
+			"name":"Alexander Ivarsson",
+			"age": "28",
+			"free":"Mjölnare",
+			"position":[57.1614,12.5493]
+		}
+	];
+
+	dataAFF.forEach(function(entry) {
+		L.marker(entry.position, {icon: affIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free
+			);
+	});
 }
 
 function loadMarkersForC() {
