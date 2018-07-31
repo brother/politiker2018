@@ -23,7 +23,7 @@ function loadMarkers() {
 //	loadMarkersForAFF();
 //	loadMarkersForC();
 //	loadMarkersForK();
-//	loadMarkersForKD();
+	loadMarkersForKD();
 	loadMarkersForL();
 	loadMarkersForMP();
 //	loadMarkersForM();
@@ -31,6 +31,62 @@ function loadMarkers() {
 //	loadMarkersForSD();
 	loadMarkersForSPI();
 	loadMarkersForV();
+}
+
+function loadMarkersForKD() {
+	var kdIcon = L.icon({
+		iconUrl: 'gfx/logo_kd.jpg',
+
+		iconSize:     [25, 23],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataKD = [
+		{
+			"name":"Morgan Börjesson",
+			"age": "67",
+			"free":"F.d. Arbetsmiljöingenjör",
+			"place":"Väröbacka",
+			"position":[57.2504,12.1812]
+		},
+		{
+			"name":"Roger Kardemark",
+			"age": "66",
+			"free":"Senior",
+			"place":"Varberg",
+			"position":[57.1083,12.2790]
+		},
+		{
+			"name":"Ann-Kristin Herdell",
+			"age": "49",
+			"free":"Förskollärare",
+			"place":"Veddige",
+			"position":[57.2669,12.3273]
+		},
+		{
+			"name":"Renée Ljung",
+			"age": "52",
+			"free":"Sjuksköterska",
+			"place":"Varberg",
+			"position":[57.09892,12.25238]
+		},
+		{
+			"name":"Karl-Gunnar Svensson",
+			"age": "61",
+			"free":"Präst",
+			"place":"Träslövsläge",
+			"position":[57.0569,12.2806]
+		}
+	];
+
+	dataKD.forEach(function(entry) {
+		L.marker(entry.position, {icon: kdIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
 }
 
 function loadMarkersForL() {
