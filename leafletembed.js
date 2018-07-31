@@ -29,7 +29,7 @@ function loadMarkers() {
 //	loadMarkersForM();
 //	loadMarkersForS();
 //	loadMarkersForSD();
-//	loadMarkersForSPI();
+	loadMarkersForSPI();
 	loadMarkersForV();
 }
 
@@ -100,6 +100,58 @@ function loadMarkersForMP() {
 			.addTo(map)
 			.bindPopup(
 				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
+}
+
+function loadMarkersForSPI() {
+	var spiIcon = L.icon({
+		iconUrl: 'gfx/logo_spi.png',
+
+		iconSize:     [25, 25],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataSPI = [
+		{
+			"name":"Lennart Liljegren",
+			"free":"Senior",
+			"place":"Varberg",
+			"position":[57.0713,12.2670]
+		},
+		{
+			"name":"Anita Svensson",
+			"free":"Sjuksköterska",
+			"place":"Varberg",
+			"position":[57.1103,12.2680]
+		},
+		{
+			"name":"Margareta Käll",
+			"free":"Pers.ass.",
+			"place":"Åskloster",
+			"position":[57.2196,12.2216]
+		},
+		{
+			"name":"Arne Richardsson",
+			"free":"Ingenjör",
+			"place":"Varberg",
+			"position":[57.1088,12.2571]
+		},
+		{
+			"name":"Rosemary Liljegren",
+			"free":"Senior",
+			"place":"Varberg",
+			"position":[57.0711,12.2652]
+		}
+	];
+
+
+	dataSPI.forEach(function(entry) {
+		L.marker(entry.position, {icon: spiIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b><br>"+entry.free+"<br>"+entry.place
 			);
 	});
 }
