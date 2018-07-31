@@ -28,7 +28,7 @@ function loadMarkers() {
 	loadMarkersForMP();
 //	loadMarkersForM();
 //	loadMarkersForS();
-//	loadMarkersForSD();
+	loadMarkersForSD();
 	loadMarkersForSPI();
 	loadMarkersForV();
 }
@@ -314,6 +314,90 @@ function loadMarkersForMP() {
 
 	dataMP.forEach(function(entry) {
 		L.marker(entry.position, {icon: mpIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
+}
+
+function loadMarkersForSD() {
+	var sdIcon = L.icon({
+		iconUrl: 'gfx/logo_sd.png',
+
+		iconSize:     [23, 25],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataSD = [
+		{
+			"name":"Olle Hällnäs",
+			"age":"46",
+			"free":"Företagare",
+			"place":"Varberg",
+			"position":[57.1131,12.2552]
+		},
+		{
+			"name":"Anna Vilfalk",
+			"age":"46",
+			"free":"Major account manager",
+			"place":"Åskloster",
+			"position":[57.2282,12.2052]
+		},
+		{
+			"name":"Erik Hellsborn",
+			"age":"34",
+			"free":"Undersköterska",
+			"place":"Varberg",
+			"position":[57.0937,12.2636]
+		},
+		{
+			"name":"Ingrid Jordebo",
+			"age":"88",
+			"free":"Rektor",
+			"place":"Tofta",
+			"position":[57.1721,12.2992]
+		},
+		{
+			"name":"Andreas Havasi",
+			"age":"31",
+			"free":"Snickare",
+			"place":"Rolfstorp",
+			"position":[57.1469,12.4608]
+		},
+		{
+			"name":"Christina Fermhede",
+			"age":"60",
+			"free":"Fastighetsmäklare",
+			"place":"Varberg",
+			"position":[57.1036,12.2554]
+		},
+		{
+			"name":"Fredrik Gustafsson",
+			"age":"40",
+			"free":"Civilingenjör",
+			"place":"Varberg",
+			"position":[57.1420,12.2283]
+		},
+		{
+			"name":"Jörgen Pejle",
+			"age":"56",
+			"free":"Brevbärare",
+			"place":"Varberg",
+			"position":[57.1310,12.2708]
+		},
+		{
+			"name":"Tobias Havasi",
+			"age":"27",
+			"free":"Svetsare",
+			"place":"Rolfstorp",
+			"position": [57.1478,12.4602]
+		}
+	];
+
+	dataSD.forEach(function(entry) {
+		L.marker(entry.position, {icon: sdIcon})
 			.addTo(map)
 			.bindPopup(
 				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
