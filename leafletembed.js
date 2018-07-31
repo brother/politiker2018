@@ -27,7 +27,7 @@ function loadMarkers() {
 	loadMarkersForL();
 	loadMarkersForMP();
 	loadMarkersForM();
-//	loadMarkersForS();
+	loadMarkersForS();
 	loadMarkersForSD();
 	loadMarkersForSPI();
 	loadMarkersForV();
@@ -560,6 +560,165 @@ function loadMarkersForM() {
 			.addTo(map)
 			.bindPopup(
 				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
+}
+
+function loadMarkersForS() {
+	var sIcon = L.icon({
+		iconUrl: 'gfx/logo_s.png',
+
+		iconSize:     [25, 26],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataS = [
+		{
+			"name":"Jana Nilsson",
+			"age":"58",
+			"place":"Varberg",
+			"position":[57.1101,12.2701]
+		},
+		{
+			"name":"Jeanette Qvist",
+			"age":"49",
+			"place":"Södra Näs",
+			"position":[57.0731,12.2680]
+		},
+		{
+			"name":"Lukas Axelsson Nord",
+			"age":"26",
+			"place":"Grimeton",
+			"position":[57.1293,12.4607]
+		},
+		{
+			"name":"Turid Ravlo Svensson",
+			"age":"63",
+			"place":"Träslövsläge",
+			"position":[57.0598,12.2789]
+		},
+		{
+			"name":"Tomas Johansson",
+			"age":"61",
+			"place":"Varberg",
+			"position":[57.0903,12.2699]
+		},
+		{
+			"name":"Linda Berggren",
+			"age":"47",
+			"place":"Träslövsläge",
+			"position":[57.0540,12.2891]
+		},
+		{
+			"name":"Anders Friebe",
+			"age":"53",
+			"place":"Derome",
+			"position":[57.2312,12.3180]
+		},
+		{
+			"name":"Jenny Bolgert",
+			"age":"38",
+			"place":"Varberg",
+			"position":[57.0940,12.2503]
+		},
+		{
+			"name":"Anton El Raai",
+			"age":"23",
+			"place":"Varberg",
+			"position":[57.1129,12.2830]
+		},
+		{
+			"name":"Malin Kjellberg",
+			"age":"45",
+			"place":"Bua",
+			"position":[57.2379,12.1182]
+		},
+		{
+			"name":"Lennart Johansson",
+			"age":"61",
+			"place":"Varberg",
+			"position":[57.1087,12.2856]
+		},
+		{
+			"name":"Julia Nord Axelsson",
+			"age":"22",
+			"place":"Varberg",
+			"position":[57.1110,12.2692]
+		},
+		{
+			"name":"Lennart Isaksson",
+			"age":"63",
+			"place":"Varberg",
+			"position":[57.1044,12.2567]
+		},
+		{
+			"name":"Ann-Britt Jansson Bensköld",
+			"age":"55",
+			"place":"Tvååker",
+			"position":[57.0429,12.4000]
+		},
+		{
+			"name":"Håkan Johannesson",
+			"age":"67",
+			"place":"Träslövsläge",
+			"position":[57.0532,12.2794]
+		},
+		{
+			"name":"Katarina Eiderbrant",
+			"age":"54",
+			"place":"Träslövsläge",
+			"position":[57.0527,12.2817]
+		},
+		{
+			"name":"Peter Stoltz",
+			"age":"58",
+			"place":"Kungsäter",
+			"position":[57.3050,12.5639]
+		},
+		{
+			"name":"Birgitta Sagdahl Wildtberg",
+			"age":"71",
+			"place":"Bua",
+			"position":[57.2367,12.1279]
+		},
+		{
+			"name":"Kent Norberg",
+			"age":"51",
+			"place":"Varberg",
+			"position":[57.0945,12.2493]
+		},
+		{
+			"name":"Rita Wiberg",
+			"age":"68",
+			"place":"Getterön",
+			"position":[57.1184,12.2105]
+		},
+		{
+			"name":"Samuel Molin",
+			"age":"18",
+			"place":"Åskloster",
+			"position":[57.2164,12.2222]
+		},
+		{
+			"name":"Ing-Marie Berggren",
+			"age":"66",
+			"place":"Varberg",
+			"position":[57.1041,12.2859]
+		},
+		{
+			"name":"Roland Ryberg",
+			"age":"65",
+			"place":"Varberg",
+			"position":[57.1179,12.2737]
+		}
+	];
+
+	dataS.forEach(function(entry) {
+		L.marker(entry.position, {icon: sIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.place
 			);
 	});
 }
