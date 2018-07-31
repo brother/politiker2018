@@ -24,13 +24,83 @@ function loadMarkers() {
 //	loadMarkersForC();
 //	loadMarkersForK();
 //	loadMarkersForKD();
-//	loadMarkersForL();
+	loadMarkersForL();
 	loadMarkersForMP();
 //	loadMarkersForM();
 //	loadMarkersForS();
 //	loadMarkersForSD();
 	loadMarkersForSPI();
 	loadMarkersForV();
+}
+
+function loadMarkersForL() {
+	var lIcon = L.icon({
+		iconUrl: 'gfx/logo_l.png',
+
+		iconSize:     [21, 25],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataL = [
+		{
+			"name":"Tobias Carlsson",
+			"age": "50",
+			"free":"Gymnasielärare",
+			"place":"Varberg",
+			"position":[57.1075,12.2810]
+		},
+		{
+			"name":"Cecilia Rönn",
+			"age": "38",
+			"free":"Lean manager",
+			"place":"Träslövsläge",
+			"position":[57.0574,12.2795]
+		},
+		{
+			"name":"Marianne Nord Lyngdorf",
+			"age": "70",
+			"free":"Gymnasielärare",
+			"place":"Varberg",
+			"position":[57.1063,12.2503]
+		},
+		{
+			"name":"Mikael Bonde",
+			"age": "62",
+			"free":"Försäljningschef",
+			"place":"Trönninge",
+			"position":[57.1416,12.2881]
+		},
+		{
+			"name":"Karl-Johan Wiktorp",
+			"age": "71",
+			"free":"Egen företagare",
+			"place":"Hamra Tvååker",
+			"position":[57.0327,12.3340]
+		},
+		{
+			"name":"Lena Persson",
+			"age": "72",
+			"free":"Medicinsk sekreterare",
+			"place":"Varberg",
+			"position":[57.1255,12.2687]
+		},
+		{
+			"name":"Samuel Lithner",
+			"age": "18",
+			"free":"Studerande",
+			"place":"Varberg",
+			"position":[57.1053,12.2912]
+		}
+	];
+
+	dataL.forEach(function(entry) {
+		L.marker(entry.position, {icon: lIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
 }
 
 function loadMarkersForMP() {
