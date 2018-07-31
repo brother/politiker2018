@@ -21,7 +21,7 @@ function initmap() {
 
 function loadMarkers() {
 //	loadMarkersForAFF();
-//	loadMarkersForC();
+	loadMarkersForC();
 //	loadMarkersForK();
 	loadMarkersForKD();
 	loadMarkersForL();
@@ -31,6 +31,97 @@ function loadMarkers() {
 //	loadMarkersForSD();
 	loadMarkersForSPI();
 	loadMarkersForV();
+}
+
+function loadMarkersForC() {
+	var cIcon = L.icon({
+		iconUrl: 'gfx/logo_c.png',
+
+		iconSize:     [24, 25],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
+	});
+
+	dataC = [
+		{
+			"name":"Christofer Bergenblock",
+			"age": "43",
+			"free":"Gymnasielärare",
+			"place":"Träslövsläge",
+			"position":[57.0633,12.2898]
+		},
+		{
+			"name":"Lena Språng",
+			"age": "52",
+			"free":"Projektledare",
+			"place":"Karl Gustav",
+			"position":[57.2808,12.5881]
+		},
+		{
+			"name":"Eva Pehrsson-Karlsson",
+			"age": "65",
+			"free":"Trädgårdsarbetare",
+			"place":"Väröbacka",
+			"position":[57.2459,12.1878]
+		},
+		{
+			"name":"Christian Persson",
+			"age": "44",
+			"free":"Fastighetsmäklare/Egenföretagare",
+			"place":"Tvååker",
+			"position":[57.0272,12.3589]
+		},
+		{
+			"name":"Katarina Sundvall",
+			"age": "52",
+			"free":"Kock/Entreprenör",
+			"place":"Sibbarp",
+			"position":[57.02726,12.53891]
+		},
+		{
+			"name":"Stefan Stenberg",
+			"age": "62",
+			"free":"Kommunpolitiker",
+			"place":"Stråvalla",
+			"position":[57.2978,12.2130]
+		},
+		{
+			"name":"Calle Wikelund",
+			"age": "49",
+			"free":"Kyl- och ventilationstekniker",
+			"place":"Varberg",
+			"position":[57.0889,12.2696]
+		},
+		{
+			"name":"ViviAnne Johansson",
+			"age": "75",
+			"free":"Lantbrukare/Senior",
+			"place":"Veddige",
+			"position":[57.2684,12.3322]
+		},
+		{
+			"name":"Harald Lagerstedt",
+			"age": "49",
+			"free":"Lantmästare",
+			"place":"Valinge",
+			"position":[57.1709,12.3816]
+		},
+		{
+			"name":"Anna-Karin Gustafsson",
+			"age": "58",
+			"free":"Förskolelärare",
+			"place":"Sibbarp",
+			"position":[57.0266,12.5378]
+		}
+	];
+
+	dataC.forEach(function(entry) {
+		L.marker(entry.position, {icon: cIcon})
+			.addTo(map)
+			.bindPopup(
+				"<b>"+entry.name+"</b>, "+entry.age+"<br>"+entry.free+"<br>"+entry.place
+			);
+	});
 }
 
 function loadMarkersForKD() {
