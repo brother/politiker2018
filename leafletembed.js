@@ -354,13 +354,12 @@ function loadMarkersForL() {
 }
 
 function loadMarkersForMP() {
-	// https://leafletjs.com/examples/custom-icons/
 	var mpIcon = L.icon({
 		iconUrl: 'gfx/logo_mp.png',
 
-		iconSize:     [25, 22], // size of the icon
-		iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
-		popupAnchor:  [10, 10] // point from which the popup should open relative to the iconAnchor
+		iconSize:     [25, 22],
+		iconAnchor:   [0, 0],
+		popupAnchor:  [10, 10]
 	});
 
 	dataMP = [
