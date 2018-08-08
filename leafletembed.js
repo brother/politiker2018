@@ -41,17 +41,17 @@ function initmap() {
 	map.addLayer(partyV);
 
 	var parties = {
-		"Allians för frihet": partyAFF,
-		"Centerpartiet": partyC,
-		"Kommunisterna": partyK,
-		"Kristdemokraterna": partyKD,
-		"Liberalerna": partyL,
-		"Miljöpartiet": partyMP,
-		"Moderaterna": partyM,
-		"SPI Välfärden": partySPI,
-		"Socialdemokraterna": partyS,
-		"Sverigedemokraterna": partySD,
-		"Vänsterpartiet": partyV
+		"<img width=8% src=\"gfx/logo_aff.png\"> Allians för frihet": partyAFF,
+		"<img width=8% src=\"gfx/logo_c.png\"> Centerpartiet": partyC,
+		"<img width=8% src=\"gfx/logo_k.png\"> Kommunisterna": partyK,
+		"<img width=8% src=\"gfx/logo_kd.jpg\"> Kristdemokraterna": partyKD,
+		"<img width=8% src=\"gfx/logo_l.png\"> Liberalerna": partyL,
+		"<img width=8% src=\"gfx/logo_mp.png\"> Miljöpartiet": partyMP,
+		"<img width=8% src=\"gfx/logo_m.png\"> Moderaterna": partyM,
+		"<img width=8% src=\"gfx/logo_spi.png\"> SPI Välfärden": partySPI,
+		"<img width=8% src=\"gfx/logo_s.png\"> Socialdemokraterna": partyS,
+		"<img width=8% src=\"gfx/logo_sd.png\"> Sverigedemokraterna": partySD,
+		"<img width=8% src=\"gfx/logo_v.png\"> Vänsterpartiet": partyV
 	};
 
 	L.control.layers(null, parties, {collapsed:false}).addTo(map);
