@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    height: 5%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1px
+}
+
+li.left {
+    border-left: 1px solid black;
+}
+
+li.right {
+    border-right: 1px solid black;
+}
