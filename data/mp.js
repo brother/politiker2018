@@ -11,7 +11,7 @@ function loadMarkersForMP() {
 		.bindPopup("5. <b>Peter Rudhager</b>, 53<br>Barnskötare<br>Breared");
 	var mpPeterBjorck = L.marker([57.1083,12.2786], {icon: partyIcons["mp"]})
 		.bindPopup("6. <b>Peter Björck</b>, 38<br>Butikschef<br>Karlberg");
-	var mpStefanEdlund = L.marker([57.1066,12.2526], {icon: partyIcons["mp"]})
+	var mpStefanEdlund = L.marker([57.13951,12.23263], {icon: partyIcons["mp"]})
 		.bindPopup("7. <b>Stefan Edlund</b>, 52<br>Lärare<br>Varberg");
 
 	return L.layerGroup([mpJohanRosander,
