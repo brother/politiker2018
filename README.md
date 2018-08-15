@@ -1,5 +1,8 @@
-# Var bor dina företrädare?
+# Var bor dina företrädare i Lerum?
+Detta är en fork från @brother, tack så mycket för inspiration.
 
+Jag tänkte göra en likadan för Lerums kommun
+"""
 Inspirerad av [Norra Hallands redovisning](https://norrahalland.se/politiker-bor-mest-i-vast/) av var Kungsbackas politiker kan tänkas bo så ville jag göra samma sak för Varberg. Detta är resultatet.
 
 Förhoppningsvis så har jag ork och tid att göra samma sak för flera kommuner i Halland och tom för regionfullmäktigevalet (lite mer komplicerat eftersom partierna har olika listor i olika valkretsar osv).
@@ -26,3 +29,4 @@ För de två partierna med namnlistor som idag inte är representerade i fullmä
 Allt material är att anse som allas egendom, närmst licensmässigt är [CC0](https://creativecommons.org/publicdomain/zero/1.0/legalcode.sv). Namn, parti och liknande kopplingar är hämtade från [Valmyndigheten](https://data.val.se/val/val2018/valsedlar/K/kommun/13/83/valsedlar.html). Jag har gjort justeringen till kartan manuellt baserat på efterforskningar.
 
 Martin Bagge, 2018-07-27
+"""
