@@ -1,4 +1,4 @@
-function loadMarkersForM() {
+function loadMarkersForKd() {
     var cAnnelieLundström = L.marker([57.778410,12.393713], {icon: partyIcons["kd"]})
 	.bindPopup("1. <b>Annelie Lundström</b>, Ambulanssjuksköterska <br>Gråbo<br>");
     var cChristianEberstein = L.marker([57.795725,12.365069], {icon: partyIcons["kd"]})
