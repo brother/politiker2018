@@ -22,7 +22,7 @@ function initmap() {
 //	var partyKD = loadMarkersForKD();
 //	var partyL = loadMarkersForL();
 //	var partyMP = loadMarkersForMP();
-//	var partyM = loadMarkersForM();
+	var partyM = loadMarkersForM();
 //	var partyS = loadMarkersForS();
 //	var partySD = loadMarkersForSD();
 //	var partySPI = loadMarkersForSPI();
@@ -34,14 +34,15 @@ function initmap() {
 //	map.addLayer(partyKD);
 //	map.addLayer(partyL);
 //	map.addLayer(partyMP);
-//	map.addLayer(partyM);
+	map.addLayer(partyM);
 //	map.addLayer(partyS);
 //	map.addLayer(partySD);
 //	map.addLayer(partySPI);
 //	map.addLayer(partyV);
 
 	var parties = {
-		"<img width=8% src=\"gfx/logo_c.png\"> Centerpartiet, 4": partyC,
+	    "<img width=8% src=\"gfx/logo_c.png\"> Centerpartiet, 4": partyC,
+	    "<img width=8% src=\"gfx/logo_m.png\"> Centerpartiet, 13": partyM,
 	};
 
 	L.control.layers(null, parties, {collapsed:false}).addTo(map);
