@@ -19,7 +19,7 @@ function initmap() {
 //	var partyAFF = loadMarkersForAFF();
 	var partyC = loadMarkersForC();
 //	var partyK = loadMarkersForK();
-//	var partyKD = loadMarkersForKD();
+	var partyKD = loadMarkersForKD();
 //	var partyL = loadMarkersForL();
 //	var partyMP = loadMarkersForMP();
 	var partyM = loadMarkersForM();
@@ -31,7 +31,7 @@ function initmap() {
 //	map.addLayer(partyAFF);
 	map.addLayer(partyC);
 //	map.addLayer(partyK);
-//	map.addLayer(partyKD);
+	map.addLayer(partyKD);
 //	map.addLayer(partyL);
 //	map.addLayer(partyMP);
 	map.addLayer(partyM);
@@ -42,6 +42,7 @@ function initmap() {
 
 	var parties = {
 	    "<img width=8% src=\"gfx/logo_c.png\"> Centerpartiet, 4": partyC,
+            "<img width=8% src=\"gfx/logo_m.png\"> Kristdemokraterna, 13": partyKD,
 	    "<img width=8% src=\"gfx/logo_m.png\"> Moderaterna, 13": partyM,
             "<img width=8% src=\"gfx/logo_m.png\"> Socialdemokraterna, 13": partyS,
 	};
