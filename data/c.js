@@ -23,6 +23,8 @@ function loadMarkersForC() {
         .bindPopup("11. <b>Ingvar Ringhage</b>, 70<br>Byggnadsarbetare<br>Floda");
     var cMariaVallin = L.marker([57.7533296,12.2532026], {icon: partyIcons["c"]})
         .bindPopup("12. <b>Maria Vallin</b>, 58<br>Socionom<br>Lerum");
+    var cMikaelDockered = L.marker([57.875255,12.3271488], {icon: partyIcons["c"]})
+        .bindPopup("13. <b>Mikael Dockered</b>, 59<br>Affärsutvecklare<br>Björboholm");
 
     return L.layerGroup([cClaesBerlin,
 			 cAnnMariTörnell,
@@ -36,5 +38,6 @@ function loadMarkersForC() {
 			 cEvaAndersson,
 			 cIngvarRinghage,
 			 cMariaVallin,
+			 cMikaelDockered
 			]);
 }

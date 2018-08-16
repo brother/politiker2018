@@ -23,7 +23,8 @@ function loadMarkersForM() {
         .bindPopup("11. <b>Vincent Nordgren</b>, 23<br>Statsvetarstudent<br>");
     var cMaritaSnällman = L.marker([57.7687681,12.2769924], {icon: partyIcons["m"]})
         .bindPopup("12. <b>Marita Snällman</b>, 62<br>Undersköterska<br>");
-
+    var cMagnusLansenfeldt = L.marker([57.7715635,12.2709849], {icon: partyIcons["m"]})
+        .bindPopup("13. <b>Magnus Lansenfeldt</b>, 73<br>Pensionär<br>");
 
     return L.layerGroup([cAlexanderAbenius,
 			 cJeanetteAndersson,
@@ -36,6 +37,7 @@ function loadMarkersForM() {
 			 cLarsGöranLarsson,
 			 cGunHolmberg,
 			 cVincentNordgren,
-			 cMaritaSnällman
+			 cMaritaSnällman,
+			 cMagnusLansenfeldt
 			]);
 }
