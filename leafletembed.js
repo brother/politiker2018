@@ -23,7 +23,7 @@ function initmap() {
 //	var partyL = loadMarkersForL();
 //	var partyMP = loadMarkersForMP();
 	var partyM = loadMarkersForM();
-//	var partyS = loadMarkersForS();
+	var partyS = loadMarkersForS();
 //	var partySD = loadMarkersForSD();
 //	var partySPI = loadMarkersForSPI();
 //	var partyV = loadMarkersForV();
@@ -42,7 +42,8 @@ function initmap() {
 
 	var parties = {
 	    "<img width=8% src=\"gfx/logo_c.png\"> Centerpartiet, 4": partyC,
-	    "<img width=8% src=\"gfx/logo_m.png\"> Centerpartiet, 13": partyM,
+	    "<img width=8% src=\"gfx/logo_m.png\"> Moderaterna, 13": partyM,
+            "<img width=8% src=\"gfx/logo_m.png\"> Socialdemokraterna, 13": partyS,
 	};
 
 	L.control.layers(null, parties, {collapsed:false}).addTo(map);
