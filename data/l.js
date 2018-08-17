@@ -1,7 +1,7 @@
 function loadMarkersForL() {
-	var lTobiasCarlsson = L.marker([57.1075,12.281], {icon: partyIcons["l"]})
+	var lTobiasCarlsson = L.marker([57.1082,12.2810], {icon: partyIcons["l"]})
 		.bindPopup("1. <b>Tobias Carlsson</b>, 50<br>Gymnasielärare<br>Varberg");
-	var lCeciliaRonn = L.marker([57.0574,12.2795], {icon: partyIcons["l"]})
+	var lCeciliaRonn = L.marker([57.0569,12.2795], {icon: partyIcons["l"]})
 		.bindPopup("2. <b>Cecilia Rönn</b>, 38<br>Lean manager<br>Träslövsläge");
 	var lMarianneNordLyngdorf = L.marker([57.1063,12.2503], {icon: partyIcons["l"]})
 		.bindPopup("3. <b>Marianne Nord Lyngdorf</b>, 70<br>Gymnasielärare<br>Varberg");

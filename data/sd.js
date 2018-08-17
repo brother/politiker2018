@@ -7,7 +7,7 @@ function loadMarkersForSD() {
 		.bindPopup("3. <b>Erik Hellsborn</b>, 34<br>Undersköterska<br>Varberg");
 	var sdIngridJordebo = L.marker([57.1721,12.2992], {icon: partyIcons["sd"]})
 		.bindPopup("4. <b>Ingrid Jordebo</b>, 88<br>Rektor<br>Tofta");
-	var sdAndreasHavasi = L.marker([57.1469,12.4608], {icon: partyIcons["sd"]})
+	var sdAndreasHavasi = L.marker([57.1460,12.4608], {icon: partyIcons["sd"]})
 		.bindPopup("5. <b>Andreas Havasi</b>, 31<br>Snickare<br>Rolfstorp");
 	var sdChristinaFermhede = L.marker([57.1036,12.2554], {icon: partyIcons["sd"]})
 		.bindPopup("6. <b>Christina Fermhede</b>, 60<br>Fastighetsmäklare<br>Varberg");
@@ -15,7 +15,7 @@ function loadMarkersForSD() {
 		.bindPopup("7. <b>Fredrik Gustafsson</b>, 40<br>Civilingenjör<br>Varberg");
 	var sdJorgenPejle = L.marker([57.131,12.2708], {icon: partyIcons["sd"]})
 		.bindPopup("8. <b>Jörgen Pejle</b>, 56<br>Brevbärare<br>Varberg");
-	var sdTobiasHavasi = L.marker([57.1478,12.4602], {icon: partyIcons["sd"]})
+	var sdTobiasHavasi = L.marker([57.1460,12.4602], {icon: partyIcons["sd"]})
 		.bindPopup("9. <b>Tobias Havasi</b>, 27<br>Svetsare<br>Rolfstorp");
 
 	return L.layerGroup([sdOlleHallnas,
