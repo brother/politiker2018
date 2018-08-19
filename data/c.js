@@ -18,7 +18,7 @@ function loadMarkersForC() {
     var cAnnMariTörnell = L.marker([57.7660551,12.257752], {icon: partyIcons["c"]})
 	.bindPopup("9. <b>Ann-Mari Törnell</b>, 80<br>Fd. enhetschef arbetsmarknad<br>Lerum");
     var cClaesBerlin = L.marker([57.7551166,12.2360502], {icon: partyIcons["c"]})
-	.bindPopup("10. <b>Claes Berling</b>, 68<br>Rymdingenjör<br>Aspen");
+	.bindPopup("10. <b>Claes Berlin</b>, 68<br>Rymdingenjör<br>Aspen");
     var cIngvarRinghage = L.marker([57.7994194,12.3557104], {icon: partyIcons["c"]})
         .bindPopup("11. <b>Ingvar Ringhage</b>, 70<br>Byggnadsarbetare<br>Floda");
     var cMariaVallin = L.marker([57.7533296,12.2532026], {icon: partyIcons["c"]})
