@@ -21,8 +21,8 @@ function loadMarkersForV() {
         .bindPopup("10. <b>Staffan Görande</b>, Norsesund<br>");
     var cPederLundemo = L.marker([57.930913,12.346629], {icon: partyIcons["v"]})
         .bindPopup("11. <b>Peder Lundemo</b>, Före detta Ekonom<br>Sjövik<br>");
-    var cPernillaWönter = L.marker([57.809563,12.360101], {icon: partyIcons["v"]})
-        .bindPopup("12. <b>Pernilla Wönter</b>, Löneadministratör<br>Floda<br>");
+    var cPernillaWönter = L.marker([57.8447904,12.4396346], {icon: partyIcons["v"]})
+        .bindPopup("12. <b>Pernilla Wönter</b>, Löneadministratör<br>Floda<br>OKÄNT VART HON BOR");
     var cMartinBerg = L.marker([57.7715635,12.2709849], {icon: partyIcons["v"]})
         .bindPopup("13. <b>Martin Berg</b>, Planeringsledare<br>");
 
