@@ -38,7 +38,7 @@ function initmap() {
 
 	var parties = {
 	    "<img width=8% src=\"gfx/logo_c.png\"> Centerpartiet, 4": partyC,
-            "<img width=8% src=\"gfx/logo_c.png\"> Feministiskt iniativ, 0": partyFI,
+            "<img width=8% src=\"gfx/logo_fi.png\"> Feministiskt iniativ, 0": partyFI,
 	    "<img width=8% src=\"gfx/logo_kd.png\"> Kristdemokraterna, 2": partyKd,
             "<img width=8% src=\"gfx/logo_l.png\"> Liberalerna, 5": partyL,
 	    "<img width=8% src=\"gfx/logo_mp.png\"> Miljöpartiet, 6": partyMp,

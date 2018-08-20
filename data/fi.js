@@ -23,6 +23,6 @@ function loadMarkersForFI() {
 			 cJohanLundbergCarlsson,
 			 cElinMolin,
 			 cMariaJerenvik,
-			 cMoaBlandini,
+			 cMoaBlandini
 			]);
 }

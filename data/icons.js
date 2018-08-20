@@ -7,7 +7,7 @@ var icons = [
 	{
 		"id": "fi",
 		"url": "gfx/logo_fi.png",
-		"size": [25, 29]
+		"size": [25, 25]
 	},
 	{
 		"id": "kd",
