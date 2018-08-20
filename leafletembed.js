@@ -10,7 +10,7 @@ function initmap() {
 	// create the tile layer with correct attribution
 	var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 	var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
-	var osm = new L.TileLayer(osmUrl, {minZoom: 10, maxZoom: 18, attribution: osmAttrib});
+	var osm = new L.TileLayer(osmUrl, {minZoom: 11, maxZoom: 18, attribution: osmAttrib});
 
         // Map center start
 	map.setView(new L.LatLng(57.8602, 12.3705),11);
@@ -39,7 +39,7 @@ function initmap() {
 	var parties = {
 	    "<img width=8% src=\"gfx/logo_c.png\"> Centerpartiet, 4": partyC,
             "<img width=8% src=\"gfx/logo_fi.png\"> Feministiskt iniativ, 0": partyFI,
-	    "<img width=8% src=\"gfx/logo_kd.png\"> Kristdemokraterna, 2": partyKd,
+	    "<img width=8% src=\"gfx/logo_kd.jpg\"> Kristdemokraterna, 2": partyKd,
             "<img width=8% src=\"gfx/logo_l.png\"> Liberalerna, 5": partyL,
 	    "<img width=8% src=\"gfx/logo_mp.png\"> Miljöpartiet, 6": partyMp,
 	    "<img width=8% src=\"gfx/logo_m.png\"> Moderaterna, 13": partyM,
