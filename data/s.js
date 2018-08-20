@@ -1,6 +1,6 @@
 function loadMarkersForS() {
-    var cDennisJeryd = L.marker([57.8229885,12.2782792], {icon: partyIcons["s"]})
-	.bindPopup("1. <b<Dennis Jeryd</b>, Lerum<br>");
+    var cDennisJeryd = L.marker([57.8230015,12.2784792], {icon: partyIcons["s"]})
+	.bindPopup("1. <b>Dennis Jeryd</b>, Lerum<br>");
     var cKarolinaRoughton = L.marker([57.7774069,12.2686436], {icon: partyIcons["s"]})
         .bindPopup("2. <b>Karolina Roughton</b>, Lerum<br>");
     var cErikLarsson = L.marker([57.8371875,12.3012319], {icon: partyIcons["s"]})
@@ -15,7 +15,7 @@ function loadMarkersForS() {
         .bindPopup("7. <b>Halim Azemi</b>, Lerum<br>");
     var cSaraJaderklint = L.marker([57.7653898,12.2697205], {icon: partyIcons["s"]})
         .bindPopup("8. <b>Sara Jäderklint</b>, Lerum<br>");
-    var cUlfLarsson = L.marker([57.8371895,12.3012339], {icon: partyIcons["s"]})
+    var cUlfLarsson = L.marker([57.8374895,12.3016339], {icon: partyIcons["s"]})
         .bindPopup("9. <b>Ulf Larsson</b>, Gråbo<br>");
     var cPamelaDanielsson = L.marker([57.7495129,12.2534547], {icon: partyIcons["s"]})
         .bindPopup("10. <b>Pamela Danielsson</b>, Lerum<br>");

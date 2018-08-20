@@ -1,7 +1,7 @@
 function loadMarkersForMp() {
     var cKatarinaKuzmanovicKrasniqi = L.marker([57.780087,12.303335], {icon: partyIcons["mp"]})
         .bindPopup("1. <b>Katarina Kuzmanovic-Krasniqi</b>, Receptionist<br>43<br>Hedefors<br>");
-    var cDanielEriksson = L.marker([57.783910,12.271965], {icon: partyIcons["mp"]})
+    var cDanielEriksson = L.marker([57.784210,12.272465], {icon: partyIcons["mp"]})
         .bindPopup("2. <b>Daniel Eriksson,</b>, 32<br>Programmerare<br>Lerum<br>");
     var cEmmaLiljeberg = L.marker([57.8154819,12.3531738], {icon: partyIcons["mp"]})
         .bindPopup("3. <b>Emma Liljeberg</b>, 40<br>Grundskolelärare<br>Lerum<br>");

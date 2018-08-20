@@ -23,7 +23,7 @@ function loadMarkersForL() {
         .bindPopup("11. <b>Stefan Larsson</b>, 49<br>Socionom<br>Floda");
     var cGertAnderzen = L.marker([57.801466,12.372751], {icon: partyIcons["l"]})
         .bindPopup("12. <b>Gert Anderzén</b>, 54<br>civilingenjör/projektledare<br>Floda");
-    var cChristerGellerman = L.marker([57.772318,12.250248], {icon: partyIcons["l"]})
+    var cChristerGellerman = L.marker([57.774318,12.250848], {icon: partyIcons["l"]})
         .bindPopup("13. <b>Christer Gellerman</b>, 58<br>Projektledare<br>Lerum");
 
     return L.layerGroup([cLillJansson,
