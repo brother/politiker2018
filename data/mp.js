@@ -7,7 +7,7 @@ function loadMarkersForMp() {
         .bindPopup("3. <b>Emma Liljeberg</b>, 40<br>Grundskolelärare<br>Lerum<br>");
     var cRutgerFridholm = L.marker([57.771874,12.252567], {icon: partyIcons["mp"]})
         .bindPopup("4. <b>Rutger Fridholm</b>, 78<br>Kommunalråd<br>Lerum<br>");
-    var cMärtaElf = L.marker([57.7488334,12.250567], {icon: partyIcons["mp"]})
+    var cMärtaElf = L.marker([57.783942,12.271963], {icon: partyIcons["mp"]})
         .bindPopup("5. <b>Märta Elf</b>, 24<br>Fil.studerande<br>Lerum<br>");
     var cBengtAnderson = L.marker([57.814155,12.446437], {icon: partyIcons["mp"]})
         .bindPopup("6. <b>Bengt Anderson</b>, 61<br>Larmoperatör<br>Tollered<br>");
