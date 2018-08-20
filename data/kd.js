@@ -8,7 +8,7 @@ function loadMarkersForKd() {
     var cJimPettersson = L.marker([57.807754,12.379231], {icon: partyIcons["kd"]})
         .bindPopup("4. <b>Jim Pettersson</b>, Undersköterska<br>Floda<br>");
     var cLenaCervin = L.marker([57.770007,12.269412], {icon: partyIcons["kd"]})
-        .bindPopup("5. <b>Lena Cervin</b>, Rektor<br>Floda<br>");
+        .bindPopup("5. <b>Lena Cervin</b>, Rektor<br>Lerum<br>");
     var cJensAbrahamsson = L.marker([57.749375,12.245564], {icon: partyIcons["kd"]})
         .bindPopup("6. <b>Jens Abrahamsson</b>, Civilingenjör<br>Lerum<br>");
     var cRoyaHeidariJorat = L.marker([57.837875,12.302842], {icon: partyIcons["kd"]})
