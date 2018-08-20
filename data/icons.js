@@ -1,17 +1,12 @@
 var icons = [
 	{
-		"id": "aff",
-		"url": "gfx/logo_aff.png",
-		"size": [25, 20]
-	},
-	{
 		"id": "c",
 		"url": "gfx/logo_c.png",
 		"size": [24, 25]
 	},
 	{
-		"id": "k",
-		"url": "gfx/logo_k.png",
+		"id": "fi",
+		"url": "gfx/logo_fi.png",
 		"size": [25, 29]
 	},
 	{
@@ -43,11 +38,6 @@ var icons = [
 		"id": "sd",
 		"url": "gfx/logo_sd.png",
 		"size": [23, 25]
-	},
-	{
-		"id": "spi",
-		"url": "gfx/logo_spi.png",
-		"size": [25, 25]
 	},
 	{
 		"id": "v",
