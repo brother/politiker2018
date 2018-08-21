@@ -54,5 +54,5 @@ function initmap() {
 		"<img width=8% src=\"gfx/logo_v.png\"> Vänsterpartiet, 2": partyV
 	};
 
-	L.control.layers(null, parties, {collapsed:false}).addTo(map);
+	L.control.layers(null, parties).addTo(map);
 }
