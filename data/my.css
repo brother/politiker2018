@@ -20,3 +20,7 @@ li.left {
 li.right {
     border-right: 1px solid black;
 }
+
+.leaflet-control-layers-toggle {
+    background-image: url(../gfx/icon_parties.png);
+}
