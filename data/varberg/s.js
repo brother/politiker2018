@@ -27,10 +27,10 @@ function loadMarkersForS() {
 		.bindPopup("13. <b>Lennart Isaksson</b>, 63<br>Varberg");
 	var sAnnBrittJanssonBenskold = L.marker([57.0429,12.4], {icon: partyIcons["s"]})
 		.bindPopup("14. <b>Ann-Britt Jansson Bensköld</b>, 55<br>Tvååker");
-	var sHakanJohannesson = L.marker([57.0569,12.2785], {icon: partyIcons["s"]})
-		.bindPopup("15. <b>Håkan Johannesson</b>, 67<br>Träslövsläge");
-	var sKatarinaEiderbrant = L.marker([57.0569,12.2817], {icon: partyIcons["s"]})
-		.bindPopup("16. <b>Katarina Eiderbrant</b>, 54<br>Träslövsläge");
+	var sHakanJohannesson = L.marker([57.1050,12.2974], {icon: partyIcons["s"]})
+		.bindPopup("15. <b>Håkan Johannesson</b>, 67<br>Träslövsläge<br><i>(Det står faktiskt Träslövsläge<br>på valsedeln. Jag vet inte varför.)</i>");
+	var sKatarinaEiderbrant = L.marker([57.1050,12.2994], {icon: partyIcons["s"]})
+		.bindPopup("16. <b>Katarina Eiderbrant</b>, 54<br>Träslövsläge<br><i>(Det står faktiskt Träslövsläge<br>på valsedeln. Jag vet inte varför.)</i>");
 	var sPeterStoltz = L.marker([57.305,12.5639], {icon: partyIcons["s"]})
 		.bindPopup("17. <b>Peter Stoltz</b>, 58<br>Kungsäter");
 	var sBirgittaSagdahlWildtberg = L.marker([57.2367,12.1279], {icon: partyIcons["s"]})
