@@ -18,11 +18,11 @@ function loadMarkersForM() {
 		.bindPopup("1. <b>Ninni Gustavsson</b>, 58<br>Inköpare<br>Ullared");
 	var mRieBoulund = L.marker([56.8759,12.5992], {icon: partyIcons["m"]})
 		.bindPopup("2. <b>Rie Boulund</b>, 62<br>Kulturvetare<br>Boberg");
-	var mKarinLundberg = L.marker([56.9010,12.4930], {icon: partyIcons["m"]})
+	var mKarinLundberg = L.marker([56.9000,12.4930], {icon: partyIcons["m"]})
 		.bindPopup("3. <b>Karin Lundberg</b>, 54<br>Förstelärare<br>Falkenberg");
 	var mGoranJanko = L.marker([56.8749,12.5217], {icon: partyIcons["m"]})
 		.bindPopup("4. <b>Göran Janko</b>, 65<br>Försäljningschef<br>Falkenberg");
-	var mCharlottaJonson = L.marker([56.9000,12.4930], {icon: partyIcons["m"]})
+	var mCharlottaJonson = L.marker([56.9020,12.4930], {icon: partyIcons["m"]})
 		.bindPopup("5. <b>Charlotta Jonson</b>, 31<br>Förskollärare<br>Falkenberg");
 	var mFilipBertilsson = L.marker([56.8749,12.5237], {icon: partyIcons["m"]})
 		.bindPopup("6. <b>Filip Bertilsson</b>, 23<br>Stadsplanerare<br>Skrea");

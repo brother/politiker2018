@@ -26,7 +26,7 @@ function loadMarkersForSD() {
 		.bindPopup("4. <b>nders Jansson</b>, 45<br>Målarmästare");
 	var sdDanielBackman = L.marker([56.9052,12.5161], {icon: partyIcons["sd"]})
 		.bindPopup("5. <b>Daniel Bäckman</b>, 40<br>Behandlingsassistent");
-	var sdChristerHedin = L.marker([56.9015,12.4806], {icon: partyIcons["sd"]})
+	var sdChristerHedin = L.marker([56.8999,12.4814], {icon: partyIcons["sd"]})
 		.bindPopup("6. <b>Christer Hedin</b>, 53<br>Fritidsledare");
 	var sdJosefinHedin = L.marker([56.9083,12.6823], {icon: partyIcons["sd"]})
 		.bindPopup("7. <b>Josefin Hedin</b>, 35<br>Undersköterska");
