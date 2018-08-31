@@ -29,7 +29,7 @@ function loadMarkersForSD() {
 	var sdChristerHedin = L.marker([56.8999,12.4814], {icon: partyIcons["sd"]})
 		.bindPopup("6. <b>Christer Hedin</b>, 53<br>Fritidsledare");
 	var sdJosefinHedin = L.marker([56.9083,12.6823], {icon: partyIcons["sd"]})
-		.bindPopup("7. <b>Josefin Hedin</b>, 35<br>Undersköterska");
+		.bindPopup("7. <b>Josefine Hedin</b>, 35<br>Undersköterska");
 	var sdStenThid = L.marker([56.9083,12.6843], {icon: partyIcons["sd"]})
 		.bindPopup("8. <b>Sten Thid</b>, 73");
 
