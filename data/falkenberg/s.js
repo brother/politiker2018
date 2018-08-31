@@ -1,5 +1,5 @@
 function loadMarkersForS() {
-	var sPerSvensson = L.marker([56.8999,12.4844], {icon: partyIcons["s"]})
+	var sPerSvensson = L.marker([56.8989,12.4814], {icon: partyIcons["s"]})
 		.bindPopup("1. <b>Per Svensson</b>, 35<br>Oppositionsråd<br>Västra Gärdet");
 	var sMarcelleFarjallah = L.marker([56.9118,12.5082], {icon: partyIcons["s"]})
 		.bindPopup("2. <b>Marcelle Farjallah</b>, 56<br>Boendesekreterare<br>Östra Gärdet");
@@ -25,7 +25,7 @@ function loadMarkersForS() {
 		.bindPopup("12. <b>Connie Kristensson</b>, 66<br>Fd. Undersköterska<br>Östra Gärdet");
 	var sDahnPersson = L.marker([56.9120,12.5250], {icon: partyIcons["s"]})
 		.bindPopup("13. <b>Dahn Persson</b>, 66<br>fd. Arbetsförmedlare<br>Tröingeberg");
-	var sGabriellaGeertinger = L.marker([56.8999,12.4854], {icon: partyIcons["s"]})
+	var sGabriellaGeertinger = L.marker([56.8989,12.4824], {icon: partyIcons["s"]})
 		.bindPopup("14. <b>Gabriella Geertinger</b>, 27<br>Servicehandläggare<br>Västra Gärdet");
 	var sMikaelSalomonsgard = L.marker([57.0053,12.6658], {icon: partyIcons["s"]})
 		.bindPopup("15. <b>Mikael Salomonsgård</b>, 55<br>Utbildare<br>Askome");
