@@ -19,7 +19,6 @@ function loadMarkersForSD() {
 		.bindPopup("9. <b>Per Ove Andersson</b>, 66<br>Pensionär");
 
 	return L.layerGroup([sdFabioIshaq,
-						 sdAntonNilsson,
 						 sdTorIngels,
 						 sdAndreaSkoglund,
 						 sdUlfHolmgren,
